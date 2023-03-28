@@ -216,6 +216,7 @@ def main(message):
                 lvl += 1
                 hp += 25 * lvl
                 damage += 15 * lvl
+
                 bot.send_message(message.chat.id, text=f'Твой уровень повысился! \
 Теперь у тебя {lvl} уровень. hp:{hp}, damage:{damage}')
             bot.send_message(message.chat.id, text=f'Враг повержен! За победу\
