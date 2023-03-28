@@ -223,6 +223,7 @@ def main(message):
         elif victim[1] > 0:
             hp -= victim[2]
             print(hp)
+
             bot.send_message(message.chat.id, text=f'Монстр атакаует!')
             if hp <= 0:
                 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
